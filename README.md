@@ -1,6 +1,5 @@
 # recipeapp
-
-> A WebApp for managing recipes using Vue.js and Firebase.
+A WebApp for managing recipes using Vue.js and Firebase.
 
 ## Build Setup
 
