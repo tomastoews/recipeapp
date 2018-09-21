@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # recipeapp
 
 > An App for managing recipes
@@ -19,3 +20,7 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+# Recipe App
+A WebApp for managing recipes using Vue.js and Firebase.
+>>>>>>> 5dac7e6a9a6a1bdeafab923f1cf9de220a0c31ec
