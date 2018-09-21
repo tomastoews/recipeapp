@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="section">
         <div class="content-container container">
             <div v-if="recipe" class="recipe-container">
                 <div class="columns">

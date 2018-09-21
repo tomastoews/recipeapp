@@ -1,26 +1,29 @@
 <template>
     <div id="dashboard">
-        <div class="container content-container">
-            <div v-if="recipes" class="content">
-                <!-- Tabs for collections goes here -->
-                <div v-for="recipe in recipes" :key="recipe.id" class="card">
-                    <div class="card-content">
-                        <p class="title is-4">{{ recipe.title }}</p>
-                        <p class="subtitle">Collection 1</p>
-                    </div>
-                    <div class="card-footer">
-                        <router-link class="card-footer-item" v-bind:to="`/recipe/${recipe.id}`">
-                            <span><i class="fa fa-eye"></i> Ansehen</span>
-                        </router-link>
-                        <router-link class="card-footer-item" v-bind:to="`/recipe/edit/${recipe.id}`">
-                            <span><i class="fa fa-pencil"></i> Bearbeiten</span>
-                        </router-link>
+        <!-- <header id="header"></header> -->
+        <div class="container">
+            <div class="section columns is-multiline">
+
+                <div v-for="recipe in recipes" :key="recipe.id" class="column is-one-third">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title is-4">{{ recipe.title }}</p>
+                        </div>
+                        <div class="card-footer">
+                            <router-link class="card-footer-item" v-bind:to="`/recipe/${recipe.id}`">
+                                <span><i class="fa fa-eye"></i> Ansehen</span>
+                            </router-link>
+                            <router-link class="card-footer-item" v-bind:to="`/recipe/edit/${recipe.id}`">
+                                <span><i class="fa fa-pencil"></i> Bearbeiten</span>
+                            </router-link>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div v-else class="no-content">
-                <router-link to="/recipe/create" class="button is-dark">Neues Rezept erstellen</router-link>
-                <router-link to="/" class="button is-dark">Sammlungen anzeigen</router-link>
+
+                <!-- <div v-if="recipes.length == 0" class="col-12 no-content">
+                    <router-link to="/recipe/create" class="button is-dark">Neues Rezept erstellen</router-link>
+                </div> -->
+
             </div>
         </div>
     </div>
@@ -59,23 +62,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .content {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+    #header {
+        height: 350px;
+        background: url('../assets/bg_1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
     .no-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 20px 10px;
         .button { margin: 10px; }
-    }
-
-    .card {
-        width: 300px;
-        margin: 5px;
     }
 </style>
 

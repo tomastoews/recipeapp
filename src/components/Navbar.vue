@@ -11,10 +11,10 @@
                         <span class="icon"><i class="fa fa-bookmark"></i></span>
                         Rezepte
                     </router-link>
-                    <router-link to="/" class="navbar-item">
+                    <!-- <router-link to="/" class="navbar-item">
                         <span class="icon"><i class="fa fa-bookmark"></i></span>
-                        Sammlungen <!-- Sammlungen / Kategorien -->
-                    </router-link>
+                        Sammlungen
+                    </router-link> -->
                     <router-link to="/recipe/create" class="navbar-item">
                         <span class="icon"><i class="fa fa-plus"></i></span>
                         Neues Rezept erstellen
@@ -22,9 +22,12 @@
                 </div>
             </div>
 
-            <div class="navbar-burger">
-                <span></span>
-            </div>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+
         </div>
     </nav>
 </template>

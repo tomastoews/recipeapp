@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="section">
         <div class="content-container container">
             <h2 class="title is-2 has-text-centered">Rezept bearbeiten</h2>
             <div class="columns">

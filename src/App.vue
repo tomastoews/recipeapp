@@ -15,10 +15,3 @@ export default {
   }
 }
 </script>
-
-<style>
-  /* #app {} */
-  .content-container {
-    margin-top: 20px;
-  }
-</style>
