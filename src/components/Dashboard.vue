@@ -69,7 +69,6 @@ export default {
         background-position: center;
         background-size: cover;
     }
-
     .no-content {
         .button { margin: 10px; }
     }

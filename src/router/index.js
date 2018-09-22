@@ -5,6 +5,8 @@ import CreateRecipe from '@/components/CreateRecipe';
 import EditRecipe from '@/components/EditRecipe';
 import ViewRecipe from '@/components/ViewRecipe';
 
+// import appConfig from './../../vue.config';
+
 Vue.use(Router);
 
 export default new Router({
@@ -30,5 +32,6 @@ export default new Router({
       component: ViewRecipe
     }
   ],
+  // base: appConfig.baseUrl,
   mode: 'history'
 });
