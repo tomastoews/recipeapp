@@ -17,6 +17,11 @@ export default new Router({
       component: Dashboard
     },
     {
+      path: '*',
+      name: 'random',
+      component: Dashboard
+    },
+    {
       path: '/recipe/create',
       name: 'createrecipe',
       component: CreateRecipe
