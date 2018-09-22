@@ -1,26 +1,5 @@
-<<<<<<< HEAD
-# recipeapp
-
-> An App for managing recipes
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-=======
 # Recipe App
-A WebApp for managing recipes using Vue.js and Firebase.
->>>>>>> 5dac7e6a9a6a1bdeafab923f1cf9de220a0c31ec
+A WebApp for managing recipes using Vue.js, BulmaCSS and Firebase.
+
+# Demo
+https://tomastoews.github.io/recipeapp/
