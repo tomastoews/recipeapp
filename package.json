@@ -6,10 +6,9 @@
   "private": true,
   "scripts": {
     "serve": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "build-default": "node build/build.js",
-    "build-github": "node build/build-github.js",
-    "deploy": "gh-pages -d dist-github",
-    "build-and-deploy-github": "node build/build-github.js && gh-pages -d dist-github"
+    "build": "node build/build.js",
+    "deploy": "gh-pages -d dist",
+    "build-and-deploy": "node build/build-github.js && gh-pages -d dist-github"
   },
   "dependencies": {
     "firebase": "^4.13.1",
